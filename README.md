@@ -14,7 +14,7 @@ IMPORTANTE: Respetar el modelo de capas, separando la responsabilidad de cada un
 
 > Al iniciar la aplicacion se muestra la siguiente pantalla de inicio:
 
-![principal](https://github.com/diegoceballosdev/CRUD-Java-JPA-Registro-Automoviles/assets/122060010/ca1aa029-0e17-45cd-bdf7-52aa1d288083)
+![principal](https://github.com/diegoceballosdev/CRUD-Java-JPA-Registro-Automoviles/assets/122060010/71836470-0c97-4112-a0b4-adf148e6ca1c)
 
 > Para realizar la carga de un registro a la base de datos, se debe seleccionar la opcion "Alta de Automoviles", la cual llevará a la siguiente ventana:
 
@@ -34,7 +34,7 @@ IMPORTANTE: Respetar el modelo de capas, separando la responsabilidad de cada un
 
 > Aqui podras nuevamente modificar los datos que desees actualizar o volver a la ventana anterior, ademas de tener la opcion de limpiar  campos de texto y dejarlos vacios.
 
-> Por ultimo, si en la ventana inicial seleccionas la opcion "Salir", la ventana se cerrara y aplicación finalizara por completo.
+> Por ultimo, si en la ventana inicial seleccionas la opcion "Salir", la ventana se cerrara y la aplicación finalizara por completo.
 
 He tratado de resumir de forma simple y superficial los apartados de la apliación, sin embargo pueden observar los detalles en el propio codigo. Invito a todos aquellos que estan en su proceso de aprendizaje a implementar este CRUD, clonar este repositorio, leer y jugar con el código. 
 

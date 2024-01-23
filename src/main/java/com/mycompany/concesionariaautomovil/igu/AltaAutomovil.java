@@ -2,6 +2,7 @@ package com.mycompany.concesionariaautomovil.igu;
 
 import com.mycompany.concesionariaautomovil.logica.ControladoraLogica;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class AltaAutomovil extends javax.swing.JFrame {
@@ -195,6 +196,8 @@ public class AltaAutomovil extends javax.swing.JFrame {
         Principal ventanaPrincipal = new Principal();
         ventanaPrincipal.setVisible(true);
         ventanaPrincipal.setLocationRelativeTo(null);
+        ventanaPrincipal.setResizable(false);
+        ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }//GEN-LAST:event_btnAtrasActionPerformed
 

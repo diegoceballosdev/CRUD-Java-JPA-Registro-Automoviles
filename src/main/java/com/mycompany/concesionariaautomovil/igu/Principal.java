@@ -1,5 +1,7 @@
 package com.mycompany.concesionariaautomovil.igu;
 
+import javax.swing.JFrame;
+
 public class Principal extends javax.swing.JFrame {
 
 
@@ -23,9 +25,9 @@ public class Principal extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Fira Code", 0, 48)); // NOI18N
-        jLabel1.setText("Venta de Automoviles");
+        jLabel1.setText("Registro de Automoviles");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(120, 39, 580, 64);
+        jLabel1.setBounds(80, 40, 670, 64);
 
         labelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo.png"))); // NOI18N
         jPanel1.add(labelLogo);
@@ -80,6 +82,8 @@ public class Principal extends javax.swing.JFrame {
         ConsultaAutomovil ventanaConsulta = new ConsultaAutomovil();
         ventanaConsulta.setVisible(true);
         ventanaConsulta.setLocationRelativeTo(null);
+        ventanaConsulta.setResizable(false);
+        ventanaConsulta.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         this.dispose();
 
@@ -90,13 +94,15 @@ public class Principal extends javax.swing.JFrame {
         AltaAutomovil ventanaAlta = new AltaAutomovil();
         ventanaAlta.setVisible(true);
         ventanaAlta.setLocationRelativeTo(null);
+        ventanaAlta.setResizable(false);
+        ventanaAlta.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
         this.dispose();
         
     }//GEN-LAST:event_btnAltaActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        
+
         this.dispose();
         
     }//GEN-LAST:event_btnSalirActionPerformed

@@ -3,6 +3,7 @@ package com.mycompany.concesionariaautomovil.igu;
 import com.mycompany.concesionariaautomovil.logica.Automovil;
 import com.mycompany.concesionariaautomovil.logica.ControladoraLogica;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class EditarAutomovil extends javax.swing.JFrame {
@@ -177,9 +178,7 @@ public class EditarAutomovil extends javax.swing.JFrame {
         this.dispose();
         
         //ABRIR VENTANA DE CONSULTA:
-        ConsultaAutomovil ventanaConsulta = new ConsultaAutomovil();
-        ventanaConsulta.setVisible(true);
-        ventanaConsulta.setLocationRelativeTo(null);
+        abrirVentanaDeConsulta();
 
     }//GEN-LAST:event_btnGuardarCambiosActionPerformed
 
@@ -201,9 +200,7 @@ public class EditarAutomovil extends javax.swing.JFrame {
         this.dispose();
         
         //ABRIR VENTANA DE CONSULTA:
-        ConsultaAutomovil ventanaConsulta = new ConsultaAutomovil();
-        ventanaConsulta.setVisible(true);
-        ventanaConsulta.setLocationRelativeTo(null);
+        abrirVentanaDeConsulta();
         
     }//GEN-LAST:event_btnAtrasActionPerformed
 
@@ -257,5 +254,15 @@ public class EditarAutomovil extends javax.swing.JFrame {
         dialog.setAlwaysOnTop(true);
         dialog.setVisible(true);
 
+    }
+
+    private void abrirVentanaDeConsulta() {
+        
+        ConsultaAutomovil ventanaConsulta = new ConsultaAutomovil();
+        ventanaConsulta.setVisible(true);
+        ventanaConsulta.setLocationRelativeTo(null);
+        ventanaConsulta.setResizable(false);
+        ventanaConsulta.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
     }
 }

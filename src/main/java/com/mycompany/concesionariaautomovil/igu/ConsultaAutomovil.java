@@ -5,6 +5,7 @@ import com.mycompany.concesionariaautomovil.logica.ControladoraLogica;
 import java.awt.Color;
 import java.util.List;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -183,6 +184,8 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
                 EditarAutomovil ventanaEditar = new EditarAutomovil(idAutomovil);
                 ventanaEditar.setVisible(true);
                 ventanaEditar.setLocationRelativeTo(null);
+                ventanaEditar.setResizable(false);
+                ventanaEditar.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 
                 //CERRAR VENTANA ACTUAL:
                 this.dispose();
@@ -207,6 +210,9 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
         Principal ventanaPrincipal = new Principal();
         ventanaPrincipal.setVisible(true);
         ventanaPrincipal.setLocationRelativeTo(null);
+        ventanaPrincipal.setResizable(false);
+        ventanaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
 
     }//GEN-LAST:event_btnAtrasActionPerformed
 

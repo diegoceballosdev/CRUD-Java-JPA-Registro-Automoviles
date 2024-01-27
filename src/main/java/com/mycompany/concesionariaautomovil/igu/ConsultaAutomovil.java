@@ -181,7 +181,7 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
                 int idAutomovil = Integer.parseInt(String.valueOf(tablaAutomoviles.getValueAt(tablaAutomoviles.getSelectedRow(), 0)));
                 
                 //PANTALLA DE EDICION:
-                EditarAutomovil ventanaEditar = new EditarAutomovil(idAutomovil);
+                EditarAutomovil ventanaEditar = new EditarAutomovil(controladoraLog, idAutomovil);
                 ventanaEditar.setVisible(true);
                 ventanaEditar.setLocationRelativeTo(null);
                 ventanaEditar.setResizable(false);
@@ -199,7 +199,6 @@ public class ConsultaAutomovil extends javax.swing.JFrame {
             mostrarMensaje("Tabla Vacia: Nada para editar","Error","Error al Editar");
         }
         
-
         
     }//GEN-LAST:event_btnEditarActionPerformed
 

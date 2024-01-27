@@ -8,11 +8,11 @@ import javax.swing.JOptionPane;
 
 public class EditarAutomovil extends javax.swing.JFrame {
     
-    private ControladoraLogica controladoraLog = null;
+    private final ControladoraLogica controladoraLog;
     private Automovil automovil;
 
-    public EditarAutomovil(int idAutomovil) {
-        controladoraLog = new ControladoraLogica();
+    public EditarAutomovil(ControladoraLogica controladoraLog, int idAutomovil) {
+        this.controladoraLog = controladoraLog;
         initComponents();
         cargarDatosFormulario(idAutomovil);
     }
